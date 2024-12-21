@@ -12,9 +12,9 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: Colors.black,
+        scaffoldBackgroundColor: Colors.black.withOpacity(.7),
         appBarTheme: AppBarTheme(
-          backgroundColor: Colors.black,
+          backgroundColor: Colors.black.withOpacity(.7),
           foregroundColor: Colors.white,
         ),
         colorScheme: ColorScheme.dark(
