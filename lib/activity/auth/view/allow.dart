@@ -19,6 +19,7 @@ class _AllowPageState extends State<AllowPage> {
       backgroundColor: Colors.black,
       body: Column(
         children: [
+          16.heightBox,
           Image.asset("assets/images/banner.png", scale: 0.1),
           SizedBox(
             height: 20,

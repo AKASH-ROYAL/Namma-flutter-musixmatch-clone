@@ -28,10 +28,11 @@ class AlbumCard extends StatelessWidget {
             textAlign: TextAlign.start,
             text: name,
             color: Colors.white,
+            fontWeight: FontWeight.w500,
           ),
           NectText(
             text: artist,
-            color: Colors.white,
+            color: textGrey,
           ),
         ],
         crossAxisAlignment: CrossAxisAlignment.start,
