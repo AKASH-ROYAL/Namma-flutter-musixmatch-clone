@@ -1,11 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-import 'package:musixmatch_clone_namma_flutter/activity/auth/initial/view/signup.dart';
-import 'package:musixmatch_clone_namma_flutter/activity/auth/initial/widgets/inputField.dart';
-import 'package:musixmatch_clone_namma_flutter/activity/auth/initial/view/allow.dart';
-import 'package:musixmatch_clone_namma_flutter/app/config/constants.dart';
+import 'package:musixmatch_clone_namma_flutter/activity/auth/view/signup.dart';
 import 'package:musixmatch_clone_namma_flutter/app/config/export.dart';
+
+import 'allow.dart';
 
 class SigninPage extends StatefulWidget {
   const SigninPage({super.key});
@@ -22,7 +18,7 @@ class _SigninPageState extends State<SigninPage> {
       appBar: AppBar(
         title: const Text("Sign in",
             style:
-            TextStyle(fontFamily: primaryFontFamily, color: Colors.white)),
+                TextStyle(fontFamily: primaryFontFamily, color: Colors.white)),
         backgroundColor: Colors.black,
       ),
       body: Container(
@@ -39,7 +35,7 @@ class _SigninPageState extends State<SigninPage> {
             const Text(
               "Login with your email to join the community",
               style:
-              TextStyle(fontFamily: primaryFontFamily, color: Colors.white),
+                  TextStyle(fontFamily: primaryFontFamily, color: Colors.white),
             ),
             const SizedBox(
               height: 20,
@@ -55,7 +51,7 @@ class _SigninPageState extends State<SigninPage> {
                 decoration: const InputDecoration(
                   hintText: 'Email',
                   hintStyle:
-                  TextStyle(color: Colors.white60), // Hint text color
+                      TextStyle(color: Colors.white60), // Hint text color
                   border: InputBorder.none, // Remove default border
                 ),
                 cursorColor: Colors.white, // Cursor color
@@ -75,7 +71,7 @@ class _SigninPageState extends State<SigninPage> {
                 decoration: const InputDecoration(
                   hintText: 'Password',
                   hintStyle:
-                  TextStyle(color: Colors.white60), // Hint text color
+                      TextStyle(color: Colors.white60), // Hint text color
                   border: InputBorder.none, // Remove default border
                 ),
                 cursorColor: Colors.white, // Cursor color
@@ -99,7 +95,7 @@ class _SigninPageState extends State<SigninPage> {
                         borderRadius: BorderRadius.all(Radius.circular(5)))),
                 onPressed: () {
                   Get.offAll(
-                        () => AllowPage(),
+                    () => AllowPage(),
                   );
                 },
                 child: NectText(

@@ -1,11 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:musixmatch_clone_namma_flutter/activity/auth/initial/view/signin.dart';
-import 'package:musixmatch_clone_namma_flutter/activity/auth/initial/widgets/inputField.dart';
-import 'package:musixmatch_clone_namma_flutter/activity/auth/initial/view/allow.dart';
-import 'package:musixmatch_clone_namma_flutter/app/config/constants.dart';
+import 'package:musixmatch_clone_namma_flutter/activity/auth/view/allow.dart';
 import 'package:musixmatch_clone_namma_flutter/app/config/export.dart';
-import 'package:musixmatch_clone_namma_flutter/app/widgets/nect_widgets/nect_text.dart';
 
 class SignupPage extends StatefulWidget {
   const SignupPage({super.key});
@@ -22,7 +16,7 @@ class _SignupPageState extends State<SignupPage> {
       appBar: AppBar(
         title: const Text("Sign up",
             style:
-                TextStyle(fontFamily: primaryFontFamily, color: Colors.white)),
+            TextStyle(fontFamily: primaryFontFamily, color: Colors.white)),
         backgroundColor: Colors.black,
       ),
       body: Padding(
@@ -41,7 +35,7 @@ class _SignupPageState extends State<SignupPage> {
             const Text(
               "Sign up with your email to join the community",
               style:
-                  TextStyle(fontFamily: primaryFontFamily, color: Colors.white),
+              TextStyle(fontFamily: primaryFontFamily, color: Colors.white),
             ),
             const SizedBox(
               height: 30,
@@ -59,7 +53,7 @@ class _SignupPageState extends State<SignupPage> {
                 decoration: const InputDecoration(
                   hintText: 'First Name',
                   hintStyle:
-                      TextStyle(color: Colors.white60), // Hint text color
+                  TextStyle(color: Colors.white60), // Hint text color
                   border: InputBorder.none, // Remove default border
                 ),
                 cursorColor: Colors.white, // Cursor color
@@ -81,7 +75,7 @@ class _SignupPageState extends State<SignupPage> {
                 decoration: const InputDecoration(
                   hintText: 'Last Name',
                   hintStyle:
-                      TextStyle(color: Colors.white60), // Hint text color
+                  TextStyle(color: Colors.white60), // Hint text color
                   border: InputBorder.none, // Remove default border
                 ),
                 cursorColor: Colors.white, // Cursor color
@@ -103,7 +97,7 @@ class _SignupPageState extends State<SignupPage> {
                 decoration: const InputDecoration(
                   hintText: 'Email',
                   hintStyle:
-                      TextStyle(color: Colors.white60), // Hint text color
+                  TextStyle(color: Colors.white60), // Hint text color
                   border: InputBorder.none, // Remove default border
                 ),
                 cursorColor: Colors.white, // Cursor color
@@ -126,7 +120,7 @@ class _SignupPageState extends State<SignupPage> {
                 decoration: const InputDecoration(
                   hintText: 'Password',
                   hintStyle:
-                      TextStyle(color: Colors.white60), // Hint text color
+                  TextStyle(color: Colors.white60), // Hint text color
                   border: InputBorder.none, // Remove default border
                 ),
                 cursorColor: Colors.white, // Cursor color
@@ -142,7 +136,7 @@ class _SignupPageState extends State<SignupPage> {
                         borderRadius: BorderRadius.all(Radius.circular(5)))),
                 onPressed: () {
                   Get.offAll(
-                    () => AllowPage(),
+                        () => AllowPage(),
                   );
                 },
                 child: NectText(

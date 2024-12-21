@@ -14,8 +14,9 @@ class AlbumCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var width = MediaQuery.of(context).size.width;
     return Container(
-      width: 150,
+      width: width * .4,
       child: Column(
         children: [
           Image.asset(image),

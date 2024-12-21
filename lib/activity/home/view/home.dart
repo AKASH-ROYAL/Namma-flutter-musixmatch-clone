@@ -22,11 +22,15 @@ class Home extends StatelessWidget {
           appBar: AppBar(
             leadingWidth: 0,
             leading: Container(),
-            title: NectText(
-              text: "Home",
-              color: textRed,
-              size: 16,
-              fontWeight: FontWeight.bold,
+            title: HStack(
+              [
+                NectText(
+                  text: "Home",
+                  color: textRed,
+                  size: 16,
+                  fontWeight: FontWeight.bold,
+                ),
+              ],
             ),
             actions: [
               Icon(
@@ -80,7 +84,7 @@ class Home extends StatelessWidget {
                 body: Wrap(
                   spacing: 10,
                   runSpacing: 10,
-                  alignment: WrapAlignment.start,
+                  alignment: WrapAlignment.center,
                   children: List.generate(
                       logic.expandAlBum.value ? logic.sampleAlbums.length : 4,
                       (index) {
@@ -124,7 +128,7 @@ class Home extends StatelessWidget {
 
   Widget buildSongListView(List<Album> albums) {
     return Container(
-      height: 210,
+      height: 240,
       margin: const EdgeInsets.only(bottom: 20),
       child: ListView.builder(
         itemCount: albums.length,

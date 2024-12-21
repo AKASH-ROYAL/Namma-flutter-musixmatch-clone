@@ -1,6 +1,5 @@
 import 'package:get/get.dart';
-import 'package:musixmatch_clone_namma_flutter/activity/auth/initial/view/signin.dart';
-import 'package:musixmatch_clone_namma_flutter/activity/auth/initial/view/signup.dart';
+import 'package:musixmatch_clone_namma_flutter/activity/auth/view/signin.dart';
 import 'package:musixmatch_clone_namma_flutter/app/config/export.dart';
 
 class Contribute extends StatelessWidget {

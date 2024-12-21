@@ -11,6 +11,8 @@ class Assets {
   static const String imagesBannerFrame02 = 'assets/images/banner_frame02.png';
   static const String imagesContribute01 = 'assets/images/contribute01.jpg';
   static const String imagesLogo = 'assets/images/logo.png';
+  static const String imagesNammaFlutterDash =
+      'assets/images/namma_flutter_dash.jpg';
   static const String interInterVariableFontOpszwght =
       'assets/fonts/inter/Inter-VariableFont_opszwght.ttf';
   static const String montserratMontserratBlack =

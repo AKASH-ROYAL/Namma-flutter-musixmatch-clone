@@ -1,9 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:musixmatch_clone_namma_flutter/activity/auth/initial/view/signin.dart';
-import 'package:musixmatch_clone_namma_flutter/activity/auth/initial/widgets/inputField.dart';
 import 'package:musixmatch_clone_namma_flutter/activity/contribute/view/contribute.dart';
-import 'package:musixmatch_clone_namma_flutter/app/config/constants.dart';
 import 'package:musixmatch_clone_namma_flutter/app/config/export.dart';
 import 'package:musixmatch_clone_namma_flutter/app/widgets/nect_widgets/nect_elevated_button.dart';
 import 'package:sign_in_button/sign_in_button.dart';
@@ -58,7 +53,7 @@ class InitScreen extends StatelessWidget {
                           backgroundColor: Colors.grey.withOpacity(.3),
                           shape: RoundedRectangleBorder(
                               borderRadius:
-                              BorderRadius.all(Radius.circular(5)))),
+                                  BorderRadius.all(Radius.circular(5)))),
                       onPressed: () {},
                       child: HStack(
                         [
@@ -77,7 +72,7 @@ class InitScreen extends StatelessWidget {
                           backgroundColor: Color(0xff17A9FD),
                           shape: RoundedRectangleBorder(
                               borderRadius:
-                              BorderRadius.all(Radius.circular(5)))),
+                                  BorderRadius.all(Radius.circular(5)))),
                       onPressed: () {},
                       child: HStack(
                         [

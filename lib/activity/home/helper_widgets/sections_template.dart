@@ -62,7 +62,7 @@ class SectionsTemplate extends StatelessWidget {
             color: textGrey,
           ),
         ],
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
       ),
     );
   }

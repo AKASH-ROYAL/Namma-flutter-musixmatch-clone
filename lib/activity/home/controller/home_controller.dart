@@ -6,9 +6,9 @@ class Homecontroller extends GetxController {
   var testString = "".obs;
   final List<Album> sampleAlbums = [
     Album(
-        image: Assets.imagesAlbum01,
-        name: "Universal Soldier",
-        artist: "Jay Electronica"),
+        image: Assets.imagesNammaFlutterDash,
+        name: "NammaFlutter Anthem",
+        artist: "Founder of namma flutter"),
     Album(
         image: Assets.imagesAlbum02,
         name: "The Invisible Man",
