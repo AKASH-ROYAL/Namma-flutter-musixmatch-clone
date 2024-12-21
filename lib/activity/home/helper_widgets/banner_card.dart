@@ -19,6 +19,7 @@ class BannerCard extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               NectText(
                 text: title,

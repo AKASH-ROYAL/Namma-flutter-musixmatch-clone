@@ -2,6 +2,10 @@
 class Assets {
   Assets._();
 
+  static const String imagesAlbum01 = 'assets/images/album01.png';
+  static const String imagesAlbum02 = 'assets/images/album02.png';
+  static const String imagesAlbum03 = 'assets/images/album03.png';
+  static const String imagesAlbum04 = 'assets/images/album04.png';
   static const String imagesBannerFrame01 = 'assets/images/banner_frame01.png';
   static const String imagesBannerFrame02 = 'assets/images/banner_frame02.png';
   static const String interInterVariableFontOpszwght =

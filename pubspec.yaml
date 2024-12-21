@@ -64,7 +64,7 @@ flutter:
   fonts:
     - family: Inter Regular
       fonts:
-        - asset: assets/fonts/inter/Inter-VariableFont_opsz,wght.ttf
+        - asset: assets/fonts/inter/Inter-VariableFont_opszwght.ttf
     - family: Montserrat
       fonts:
         - asset: assets/fonts/Montserrat/Montserrat-Thin.ttf
