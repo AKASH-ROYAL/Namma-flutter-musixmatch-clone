@@ -6,8 +6,11 @@ class Assets {
   static const String imagesAlbum02 = 'assets/images/album02.png';
   static const String imagesAlbum03 = 'assets/images/album03.png';
   static const String imagesAlbum04 = 'assets/images/album04.png';
+  static const String imagesBanner = 'assets/images/banner.png';
   static const String imagesBannerFrame01 = 'assets/images/banner_frame01.png';
   static const String imagesBannerFrame02 = 'assets/images/banner_frame02.png';
+  static const String imagesContribute01 = 'assets/images/contribute01.jpg';
+  static const String imagesLogo = 'assets/images/logo.png';
   static const String interInterVariableFontOpszwght =
       'assets/fonts/inter/Inter-VariableFont_opszwght.ttf';
   static const String montserratMontserratBlack =

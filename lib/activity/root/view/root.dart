@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 import 'package:musixmatch_clone_namma_flutter/activity/root/controller/root_controller.dart';
+import 'package:musixmatch_clone_namma_flutter/activity/search/view/search.dart';
 import 'package:musixmatch_clone_namma_flutter/app/config/export.dart';
 
 class Root extends StatefulWidget {
@@ -23,6 +24,10 @@ class _RootState extends State<Root> {
           body: logic.pages[logic.currentIndex.value],
           bottomNavigationBar: BottomNavigationBar(
             onTap: (index) {
+              if (index == 4) {
+                Get.to(() => Search(), transition: Transition.rightToLeft);
+                return;
+              }
               logic.currentIndex.value = index;
             },
             selectedItemColor: primaryColor,

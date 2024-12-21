@@ -20,6 +20,8 @@ class Home extends StatelessWidget {
         print(logic.testString.value);
         return Scaffold(
           appBar: AppBar(
+            leadingWidth: 0,
+            leading: Container(),
             title: NectText(
               text: "Home",
               color: textRed,
@@ -59,7 +61,7 @@ class Home extends StatelessWidget {
                 ],
                 spacing: 10,
               ).scrollHorizontal().px16(),
-
+              10.heightBox,
               Divider(
                 thickness: 0.5,
                 color: textGrey,

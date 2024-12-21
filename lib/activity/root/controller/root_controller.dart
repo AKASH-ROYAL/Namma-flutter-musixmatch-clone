@@ -12,7 +12,6 @@ class RootController extends GetxController {
     Music(),
     Contribute(),
     Identify(),
-    Search(),
   ];
 
   var currentIndex = 0.obs;
