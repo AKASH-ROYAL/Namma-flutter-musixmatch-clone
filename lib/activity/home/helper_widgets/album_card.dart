@@ -16,10 +16,13 @@ class AlbumCard extends StatelessWidget {
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
     return Container(
-      width: width * .4,
+      width: width > 500 ? 200 : width * .4,
       child: Column(
         children: [
-          Image.asset(image),
+          Image.asset(
+            image,
+            height: 150,
+          ),
           8.heightBox,
           NectText(
             textAlign: TextAlign.start,
