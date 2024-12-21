@@ -25,6 +25,7 @@ class SectionsTemplate extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Row(
             children: [
@@ -57,12 +58,11 @@ class SectionsTemplate extends StatelessWidget {
               fontWeight: FontWeight.w600,
             ),
           ).p16().onTap(expandOnTap),
-          Divider(
+          const Divider(
             thickness: 0.5,
             color: textGrey,
           ),
         ],
-        crossAxisAlignment: CrossAxisAlignment.center,
       ),
     );
   }

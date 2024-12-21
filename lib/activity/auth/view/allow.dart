@@ -1,8 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:musixmatch_clone_namma_flutter/activity/home/view/home.dart';
 import 'package:musixmatch_clone_namma_flutter/activity/root/view/root.dart';
-import 'package:musixmatch_clone_namma_flutter/app/config/constants.dart';
 import 'package:musixmatch_clone_namma_flutter/app/config/export.dart';
 
 class AllowPage extends StatefulWidget {
@@ -21,7 +17,7 @@ class _AllowPageState extends State<AllowPage> {
         children: [
           16.heightBox,
           Image.asset("assets/images/banner.png", scale: 0.1),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           const Text("Please allow us to show the lyrics above other apps",
@@ -29,7 +25,7 @@ class _AllowPageState extends State<AllowPage> {
                   fontFamily: primaryFontFamily,
                   color: Colors.white,
                   fontSize: 20)),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           const Text(
@@ -39,18 +35,18 @@ class _AllowPageState extends State<AllowPage> {
                 color: Colors.grey,
                 fontSize: 16),
           ),
-          Spacer(),
+          const Spacer(),
           ElevatedButton(
               style: ElevatedButton.styleFrom(
-                  backgroundColor: Color(0xffffffff),
-                  shape: RoundedRectangleBorder(
+                  backgroundColor: const Color(0xffffffff),
+                  shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(5)))),
               onPressed: () {
                 Get.to(
-                  () => Root(),
+                  () => const Root(),
                 );
               },
-              child: NectText(
+              child: const NectText(
                 text: "Allow Access",
                 fontWeight: FontWeight.bold,
                 color: Colors.black,

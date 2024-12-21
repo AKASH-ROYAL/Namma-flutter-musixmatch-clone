@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:musixmatch_clone_namma_flutter/activity/auth/view/initial.dart';
-import 'package:musixmatch_clone_namma_flutter/activity/home/view/home.dart';
-import 'package:musixmatch_clone_namma_flutter/activity/root/view/root.dart';
-import 'package:musixmatch_clone_namma_flutter/app/config/constants.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -13,12 +10,12 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: textBlack,
-        appBarTheme: AppBarTheme(
-          backgroundColor: Colors.black.withOpacity(.7),
+        scaffoldBackgroundColor: Colors.black,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.black,
           foregroundColor: Colors.white,
         ),
-        colorScheme: ColorScheme.dark(
+        colorScheme: const ColorScheme.dark(
           primary: Colors.white,
           secondary: Colors.grey,
         ),
@@ -28,7 +25,7 @@ class MyApp extends StatelessWidget {
           bodySmall: TextStyle(color: Colors.white),
         ),
       ),
-      home: InitScreen(),
+      home: const InitScreen(),
     );
   }
 }

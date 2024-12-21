@@ -1,4 +1,3 @@
-import 'package:get/get.dart';
 import 'package:musixmatch_clone_namma_flutter/activity/root/controller/root_controller.dart';
 import 'package:musixmatch_clone_namma_flutter/activity/search/view/search.dart';
 import 'package:musixmatch_clone_namma_flutter/app/config/export.dart';
@@ -25,7 +24,7 @@ class _RootState extends State<Root> {
           bottomNavigationBar: BottomNavigationBar(
             onTap: (index) {
               if (index == 4) {
-                Get.to(() => Search(), transition: Transition.rightToLeft);
+                Get.to(() => const Search(), transition: Transition.rightToLeft);
                 return;
               }
               logic.currentIndex.value = index;
@@ -41,7 +40,7 @@ class _RootState extends State<Root> {
             showUnselectedLabels: true,
             unselectedItemColor: textBlack,
             currentIndex: logic.currentIndex.value,
-            items: [
+            items: const [
               BottomNavigationBarItem(
                   icon: Icon(
                     Icons.home_filled,

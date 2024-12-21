@@ -4,7 +4,6 @@ import 'package:musixmatch_clone_namma_flutter/activity/contribute/view/contribu
 import 'package:musixmatch_clone_namma_flutter/activity/home/view/home.dart';
 import 'package:musixmatch_clone_namma_flutter/activity/identify/view/identify.dart';
 import 'package:musixmatch_clone_namma_flutter/activity/music/view/music.dart';
-import 'package:musixmatch_clone_namma_flutter/activity/search/view/search.dart';
 
 class RootController extends GetxController {
   List<Widget> pages = const [

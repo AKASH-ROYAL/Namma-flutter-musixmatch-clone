@@ -1,5 +1,4 @@
 import 'package:musixmatch_clone_namma_flutter/app/config/export.dart';
-import 'package:get/get.dart';
 
 class Search extends StatelessWidget {
   const Search({super.key});
@@ -13,13 +12,13 @@ class Search extends StatelessWidget {
               onPressed: () {
                 Get.back();
               },
-              icon: Icon(
+              icon: const Icon(
                 Icons.arrow_back,
                 color: textGrey,
               )),
         ),
         leadingWidth: 40,
-        title: NectText(
+        title: const NectText(
           text: "Search",
           size: 20,
           color: textGrey,
@@ -48,13 +47,13 @@ class Search extends StatelessWidget {
                 cursorColor: Colors.white, // Cursor color
               ),
             ),
-            NectText(
+            const NectText(
               text: "Get Your favorite lyrics, now",
               size: 20,
               fontWeight: FontWeight.bold,
             ),
             10.heightBox,
-            NectText(
+            const NectText(
               text: "Search for songs, artists and albums",
               size: 12,
               color: textGrey,

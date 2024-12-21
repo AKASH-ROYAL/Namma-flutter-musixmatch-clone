@@ -1,6 +1,4 @@
-import 'dart:math';
 
-import 'package:get/get.dart';
 import 'package:musixmatch_clone_namma_flutter/activity/home/controller/home_controller.dart';
 import 'package:musixmatch_clone_namma_flutter/activity/home/helper_widgets/album_card.dart';
 import 'package:musixmatch_clone_namma_flutter/activity/home/helper_widgets/banner_card.dart';
@@ -22,7 +20,7 @@ class Home extends StatelessWidget {
           appBar: AppBar(
             leadingWidth: 0,
             leading: Container(),
-            title: HStack(
+            title: const HStack(
               [
                 NectText(
                   text: "Home",
@@ -33,7 +31,7 @@ class Home extends StatelessWidget {
               ],
             ),
             actions: [
-              Icon(
+              const Icon(
                 Icons.settings,
                 color: Colors.white,
                 size: 24,
@@ -44,7 +42,7 @@ class Home extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               //banner section
-              HStack(
+              const HStack(
                 [
                   BannerCard(
                     title: "For artists",
@@ -66,7 +64,7 @@ class Home extends StatelessWidget {
                 spacing: 10,
               ).scrollHorizontal().px16(),
               10.heightBox,
-              Divider(
+              const Divider(
                 thickness: 0.5,
                 color: textGrey,
               ),

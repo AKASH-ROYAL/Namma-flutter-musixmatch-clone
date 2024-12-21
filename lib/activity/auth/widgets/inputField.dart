@@ -51,7 +51,7 @@ class _FormContainerWidgetState extends State<FormContainerWidget> {
       ),
       child: TextFormField(
         focusNode: FocusNode(),
-        style: TextStyle(
+        style: const TextStyle(
             fontFamily: primaryFontFamily,
             color: Color.fromARGB(255, 255, 255, 255)),
         controller: widget.controller,

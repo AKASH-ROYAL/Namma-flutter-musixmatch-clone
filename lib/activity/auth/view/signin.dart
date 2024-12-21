@@ -90,15 +90,15 @@ class _SigninPageState extends State<SigninPage> {
             ),
             ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                    backgroundColor: Color(0xffffffff),
-                    shape: RoundedRectangleBorder(
+                    backgroundColor: const Color(0xffffffff),
+                    shape: const RoundedRectangleBorder(
                         borderRadius: BorderRadius.all(Radius.circular(5)))),
                 onPressed: () {
                   Get.offAll(
-                    () => AllowPage(),
+                    () => const AllowPage(),
                   );
                 },
-                child: NectText(
+                child: const NectText(
                   text: "Sign in",
                   color: Colors.black,
                 )).w(300),

@@ -1,5 +1,3 @@
-import 'package:get/get.dart';
-import 'package:musixmatch_clone_namma_flutter/activity/auth/view/signin.dart';
 import 'package:musixmatch_clone_namma_flutter/app/config/export.dart';
 
 class Contribute extends StatelessWidget {
@@ -33,7 +31,7 @@ class Contribute extends StatelessWidget {
                   color: Colors.grey,
                   fontSize: 20),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             ElevatedButton(
@@ -43,7 +41,7 @@ class Contribute extends StatelessWidget {
                         borderRadius: BorderRadius.all(Radius.circular(5)))),
                 onPressed: () {
                   Get.to(
-                    () => SigninPage(),
+                    () => const SigninPage(),
                   );
                 },
                 child: const NectText(

@@ -1,7 +1,4 @@
-import 'package:musixmatch_clone_namma_flutter/activity/contribute/view/contribute.dart';
 import 'package:musixmatch_clone_namma_flutter/app/config/export.dart';
-import 'package:musixmatch_clone_namma_flutter/app/widgets/nect_widgets/nect_elevated_button.dart';
-import 'package:sign_in_button/sign_in_button.dart';
 
 class InitScreen extends StatelessWidget {
   const InitScreen({super.key});
@@ -18,7 +15,7 @@ class InitScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                         borderRadius: BorderRadius.all(Radius.circular(15)),
                         image: DecorationImage(
                             image: AssetImage("assets/images/logo.png"),
@@ -50,15 +47,15 @@ class InitScreen extends StatelessWidget {
                   ElevatedButton(
                       style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.grey.withOpacity(.3),
-                          shape: RoundedRectangleBorder(
+                          shape: const RoundedRectangleBorder(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(5)))),
                       onPressed: () {},
                       child: HStack(
                         [
-                          Icon(Icons.email),
+                          const Icon(Icons.email),
                           30.widthBox,
-                          NectText(
+                          const NectText(
                             text: "Continue with Google",
                             size: 16,
                             fontWeight: FontWeight.w500,
@@ -68,19 +65,19 @@ class InitScreen extends StatelessWidget {
                   10.heightBox,
                   ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                          backgroundColor: Color(0xff17A9FD),
-                          shape: RoundedRectangleBorder(
+                          backgroundColor: const Color(0xff17A9FD),
+                          shape: const RoundedRectangleBorder(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(5)))),
                       onPressed: () {},
                       child: HStack(
                         [
-                          Icon(
+                          const Icon(
                             Icons.facebook,
                             color: Colors.black,
                           ),
                           30.widthBox,
-                          NectText(
+                          const NectText(
                             text: "Continue with Facebook",
                             size: 16,
                             fontWeight: FontWeight.w500,
@@ -102,7 +99,7 @@ class InitScreen extends StatelessWidget {
                       ),
                       InkWell(
                           onTap: () {
-                            Get.to(() => SigninPage(),
+                            Get.to(() => const SigninPage(),
                                 transition: Transition.rightToLeft);
                           },
                           child: const Text("use your email",

@@ -15,9 +15,10 @@ class AlbumCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
-    return Container(
+    return SizedBox(
       width: width > 500 ? 200 : width * .4,
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Image.asset(
             image,
@@ -35,7 +36,6 @@ class AlbumCard extends StatelessWidget {
             color: textGrey,
           ),
         ],
-        crossAxisAlignment: CrossAxisAlignment.start,
       ),
     );
   }

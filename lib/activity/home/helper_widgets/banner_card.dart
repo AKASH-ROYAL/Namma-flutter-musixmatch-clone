@@ -17,9 +17,11 @@ class BannerCard extends StatelessWidget {
       color: Colors.transparent,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               NectText(
                 text: title,
@@ -29,7 +31,6 @@ class BannerCard extends StatelessWidget {
                 fontWeight: FontWeight.w600,
               ),
             ],
-            mainAxisAlignment: MainAxisAlignment.center,
           ).wh(180, 60),
           6.heightBox,
           Image.asset(
@@ -39,7 +40,6 @@ class BannerCard extends StatelessWidget {
             fit: BoxFit.fill,
           ).pOnly(left: 10)
         ],
-        crossAxisAlignment: CrossAxisAlignment.start,
       ),
     );
   }
