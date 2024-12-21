@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:musixmatch_clone_namma_flutter/activity/auth/view/initial.dart';
 import 'package:musixmatch_clone_namma_flutter/activity/home/view/home.dart';
 import 'package:musixmatch_clone_namma_flutter/activity/root/view/root.dart';
+import 'package:musixmatch_clone_namma_flutter/app/config/constants.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: Colors.black.withOpacity(.7),
+        scaffoldBackgroundColor: textBlack,
         appBarTheme: AppBarTheme(
           backgroundColor: Colors.black.withOpacity(.7),
           foregroundColor: Colors.white,
